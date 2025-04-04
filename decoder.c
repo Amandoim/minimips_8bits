@@ -29,7 +29,7 @@ int binarioInt(const char *binario) {
     }
     return valor;
 }
-
+//funcao para decodificar a instrucao
 void decodificar(instrucao *inst) {
     int bin_inst = binarioInt(inst->instChar); //converte string bin pra int
     inst->opcode = (bin_inst >> 12) & 0xF; // pega o OPCODE bits 15-12, 4 mais significativos 
